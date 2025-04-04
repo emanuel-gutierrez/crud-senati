@@ -13,7 +13,7 @@ import java.sql.*;
 public class Conexion {
     public Connection conectar(){
        String url = "jdbc:mysql://localhost:3306/seanti?zeroDateTimeBehavior=CONVERT_TO_NULL";
-       String user= "root";
+       String user= "root"; 
        String password = "";
        Connection cn = null;
        
