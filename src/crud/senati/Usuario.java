@@ -109,7 +109,7 @@ public class Usuario extends javax.swing.JFrame {
         // TODO add your handling code here:
         Conexion cn = new Conexion();
         
-        String query = "INSERT INTO Usuario(id, name, lastname) Values (?, ?, ?)";
+        String query = "INSERT INTO usuarios(id, name, lastname) Values (?, ?, ?)";
         
         int id =Integer.parseInt(txtId.getText());
         String name = txtNombre.getText();

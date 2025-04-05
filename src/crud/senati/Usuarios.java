@@ -24,7 +24,7 @@ public class Usuarios extends javax.swing.JFrame {
         Conexion cn = new Conexion();  //Instanciar
         cn.conectar();
 
-        String querry = "SELECT * FROM Usuario";
+        String querry = "SELECT * FROM Usuarios";
 
         try {
             Statement st = null;
@@ -209,7 +209,7 @@ public class Usuarios extends javax.swing.JFrame {
                 TableModel modelo = tblUsuarios.getModel();
                 Conexion cn = new Conexion();
                 String id = modelo.getValueAt(tblUsuarios.getSelectedRow(), 0).toString();
-                String query = "DELETE FROM Usuario WHERE id =?";
+                String query = "DELETE FROM usuarios WHERE id =?";
                 try {
                     PreparedStatement ps = cn.conectar().prepareStatement(query);
                     ps.setInt(1, Integer.parseInt(id));

@@ -122,7 +122,7 @@ public class EditarUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
         Conexion cn = new Conexion();
 
-        String query = "UPDATE Usuario SET name =?, lastname=? WHERE id =? ";
+        String query = "UPDATE usuarios SET name =?, lastname=? WHERE id =? ";
 
         int id =Integer.parseInt(txtId.getText());
         String name = txtNombre.getText();
@@ -139,7 +139,7 @@ public class EditarUsuario extends javax.swing.JFrame {
                 System.out.println("Registro insetado correctamente");
             }
             dispose();
-            Usuario formUser = new Usuario();
+            
             
         } catch (SQLException e){
             System.out.println(e);
